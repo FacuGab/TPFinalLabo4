@@ -42,6 +42,4 @@ public class TipoUsuario {
 		return "TipoUsuario [IdTipoUsuario=" + IdTipoUsuario + ", Descripcion=" + Descripcion + "]";
 	}
 	
-	/// prueba marge
-	
 }
