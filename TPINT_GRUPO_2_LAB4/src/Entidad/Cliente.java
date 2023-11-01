@@ -1,6 +1,6 @@
 package Entidad;
 
-public class Clente {
+public class Cliente {
 	
 	private int IdCliente;
 	private int Dni;
