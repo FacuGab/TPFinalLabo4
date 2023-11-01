@@ -16,7 +16,7 @@ public class Usuario {
 	}
 	
 	public Usuario (int idusuario, String pass, String nombre, String apellido, TipoUsuario tipo, int estado ) {
-		super();
+
 		this.IdUsuario=idusuario;
 		this.Contraseña=pass;
 		this.NombreUser=nombre;
