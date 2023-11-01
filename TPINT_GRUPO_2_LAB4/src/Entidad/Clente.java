@@ -1,6 +1,6 @@
 package Entidad;
 
-public class Cliente {
+public class Clente {
 	
 	private int IdCliente;
 	private int Dni;
@@ -15,33 +15,10 @@ public class Cliente {
 	private Localidad  Localidad;
 	
 	
-	//Constructor
-	
-	public Cliente  () {}
-	
-	public Cliente(int idCliente, int dni, String nombre, String apeliido, String direccion, String correo, String cuit,
-			char sexo, String telefono, int estado, Localidad localidad) {
-		super();
-		IdCliente = idCliente;
-		Dni = dni;
-		Nombre = nombre;
-		Apeliido = apeliido;
-		Direccion = direccion;
-		Correo = correo;
-		Cuit = cuit;
-		Sexo = sexo;
-		Telefono = telefono;
-		Estado = estado;
-		Localidad = localidad;
-	}
-	
-	
-	
 	//Getters
 	public int getIdCliente() {
 		return IdCliente;
 	}
-
 	public int getDni() {
 		return Dni;
 	}
