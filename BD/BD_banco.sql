@@ -76,9 +76,9 @@ CREATE TABLE prestamo (
 -- Crear una tabla llamada "cuenta" con los campos numeroCuenta (entero, clave primaria), saldoActual (decimal) y idCliente (entero, clave foránea que referencia a cliente.idCliente)
 CREATE TABLE cuenta (
   idCuenta INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  numeroCuenta INT NOT NULL,
+  numeroCuenta INT(10) ZEROFILL NOT NULL AUTO_INCREMENT,
   fecha_alta DATE NOT NULL,
-  cbu INT NOT NULL,
+  cbu varchar(22) NOT NULL,
   saldo DECIMAL(10,2) NOT NULL,
   idCliente INT NOT NULL,
   idTipoCuenta INT NOT NULL,

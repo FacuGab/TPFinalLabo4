@@ -8,7 +8,7 @@ import Entidad.Cuenta;
 public interface CuentaDao {
 	
 	public ArrayList <Cuenta> ListarTodas ();
-	public ArrayList <Cuenta> ListarCliente (int idcliente);
+	public Cuenta ListarUno (int idCuenta);
 	public boolean  InsertarCuenta (int cbu,int idcliente,LocalDate fecalt, int numcuenta, float saldo, int tipocuenta );
 	public boolean ModificarCuenta (int idcuenta);
 	public boolean EliminarCuenta (int idcuenta);

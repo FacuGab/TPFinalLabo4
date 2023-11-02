@@ -1,3 +1,5 @@
+<%@page import="Entidad.Cuenta"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,26 +48,43 @@
         <input type="text" name="numeroCuentaModificar" id="numeroCuentaModificar" placeholder="Número de Cuenta"><br>
         <input type="submit" name="action" value="Modificar Cuenta">
     </form>
-
+<br>
+<form method="post" action="ServletCuenta">
+    <input type="submit" name="btnMostrarCuentas" value="Mostrar cuentas">
+</form>
+    <div id="listaCuentas" >
     <h2>Listado de Cuentas</h2>
-    <table border="1">
-        <tr>
-            <th>ID de Cuenta</th>
-            <th>ID de Cliente</th>
-            <th>Tipo de Cuenta</th>
-            <th>Número de Cuenta</th>
-            <th>Acciones</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>Caja de ahorro</td>
-            <td>12345-67890</td>
-            <td>
-                <button onclick="modificarCuenta(1, 1, 'Caja de ahorro', '12345-67890')">Modificar</button>
-                <button>Eliminar</button>
-            </td>
-        </tr>
-    </table>
+      
+    <% 
+	ArrayList<Cuenta> listaCuentas= null;
+	if(request.getAttribute("listaCuentas")!=null)
+	{
+		listaCuentas= (ArrayList<Cuenta>) request.getAttribute("listaCuentas");
+	}
+
+ %>
+
+<table border="1">
+	<tr> <th>ID</th>  <th>Cliente</th>  <th>Fecha de Alta</th> <th>Tipo de Cuenta</th> <th>Numero de Cuenta</th> <th>CBU</th> <th>Saldo</th> <th></th> </tr>
+	<%  if(listaCuentas!=null)
+		for(Cuenta cuenta : listaCuentas) 
+		{
+	%>
+	<tr>  
+	     <form action="servletUsuario" method="post">
+	     <td><%=cuenta.getIdCuenta() %> <input type="hidden" name="idUsuario" value="<%=cuenta.getIdCuenta() %>"> </td>
+	     <td><%=cuenta.getCliente().getApeliido().concat(" ").concat(cuenta.getCliente().getNombre()) %></td>    
+	     <td><%=cuenta.getFechaAlta() %></td>
+	     <td><%=cuenta.getTipoC().getDescripcion() %></td> 
+	     <td><%=cuenta.getNumeroCuenta() %></td>
+	     <td><%=cuenta.getCbu() %></td>
+	     <td><%=cuenta.getSaldo() %></td>
+	     <td> <input type="submit" name="btnEliminar" value="Eliminar"> </td>  
+	     </form>  
+	</tr>
+	<%  } %>
+
+</table>
+ </div>
 </body>
 </html>

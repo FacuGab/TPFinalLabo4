@@ -8,10 +8,10 @@ public class Cliente {
 	private String Apeliido;
 	private String Direccion;
 	private String Correo;
-	private String Cuit;
-	private char Sexo;
+	private double Cuit;
+	private String Sexo;
 	private String Telefono;
-	private  int Estado;
+	private  String Estado;
 	private Localidad  Localidad;
 	
 	
@@ -34,16 +34,16 @@ public class Cliente {
 	public String getCorreo() {
 		return Correo;
 	}
-	public String getCuit() {
+	public double getCuit() {
 		return Cuit;
 	}
-	public char getSexo() {
+	public String getSexo() {
 		return Sexo;
 	}
 	public String getTelefono() {
 		return Telefono;
 	}
-	public int getEstado() {
+	public String getEstado() {
 		return Estado;
 	}
 	public Localidad getLocalidad() {
@@ -69,16 +69,16 @@ public class Cliente {
 	public void setCorreo(String correo) {
 		Correo = correo;
 	}
-	public void setCuit(String cuit) {
+	public void setCuit(double cuit) {
 		Cuit = cuit;
 	}
-	public void setSexo(char sexo) {
+	public void setSexo(String sexo) {
 		Sexo = sexo;
 	}
 	public void setTelefono(String telefono) {
 		Telefono = telefono;
 	}
-	public void setEstado(int estado) {
+	public void setEstado(String estado) {
 		Estado = estado;
 	}
 	public void setLocalidad(Localidad localidad) {

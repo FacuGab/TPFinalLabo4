@@ -1,6 +1,6 @@
 package Entidad;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Cuenta {
 
@@ -8,16 +8,16 @@ public class Cuenta {
 	private Cliente Cliente;
 	private TipoCuenta TipoC;
 	private int NumeroCuenta;
-	private LocalDate FechaAlta;
-	private int Cbu;
-	private float Saldo;
+	private Date FechaAlta;
+	private String Cbu;
+	private double Saldo;
 	
 	
 	//Constuctor
 	
 	public Cuenta() {}
 	
-	public Cuenta(int idCuenta, Cliente cliente, TipoCuenta tipoC, int numeroCuenta, LocalDate fechaAlta,int cbu, float saldo) {
+	public Cuenta(int idCuenta, Cliente cliente, TipoCuenta tipoC, int numeroCuenta, Date fechaAlta,String cbu, double saldo) {
 		super();
 		IdCuenta = idCuenta;
 		Cliente = cliente;
@@ -42,13 +42,13 @@ public class Cuenta {
 	public int getNumeroCuenta() {
 		return NumeroCuenta;
 	}
-	public LocalDate getFechaAlta() {
+	public Date getFechaAlta() {
 		return FechaAlta;
 	}
-	public int getCbu() {
+	public String getCbu() {
 		return Cbu;
 	}
-	public float getSaldo() {
+	public double getSaldo() {
 		return Saldo;
 	}
 	
@@ -65,13 +65,13 @@ public class Cuenta {
 	public void setNumeroCuenta(int numeroCuenta) {
 		NumeroCuenta = numeroCuenta;
 	}
-	public void setFechaAlta(LocalDate fechaAlta) {
+	public void setFechaAlta(Date fechaAlta) {
 		FechaAlta = fechaAlta;
 	}
-	public void setCbu(int cbu) {
+	public void setCbu(String cbu) {
 		Cbu = cbu;
 	}
-	public void setSaldo(float saldo) {
+	public void setSaldo(double saldo) {
 		Saldo = saldo;
 	}
 

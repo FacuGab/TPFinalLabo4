@@ -6,6 +6,11 @@ public class TipoCuenta {
 	private String Descripcion;
 	
 	
+	public TipoCuenta(int idTipoCuenta, String descripcion) {
+		super();
+		IdTipoCuenta = idTipoCuenta;
+		Descripcion = descripcion;
+	}
 	//Getters
 	public int getIdTipoCuenta() {
 		return IdTipoCuenta;
@@ -28,8 +33,5 @@ public class TipoCuenta {
 	public String toString() {
 		return "TipoCuenta [IdTipoCuenta=" + IdTipoCuenta + ", Descripcion=" + Descripcion + "]";
 	}
-	
-	
-	
 
 }
