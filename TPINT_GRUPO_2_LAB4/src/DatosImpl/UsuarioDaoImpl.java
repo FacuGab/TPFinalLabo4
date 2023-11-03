@@ -1,10 +1,16 @@
 package DatosImpl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import Datos.UsuarioDao;
+import Entidad.Cliente;
+import Entidad.Cuenta;
+import Entidad.Provincia;
+import Entidad.TipoCuenta;
+import Entidad.TipoUsuario;
 import Entidad.Usuario;
-import daoImpl.Conexion;
+
 
 
 
@@ -13,7 +19,7 @@ public  class UsuarioDaoImpl implements UsuarioDao {
 	private static final String insert= "INSERT INTO  USUARIO  (NOMBRE,APELLIDO,CLAVE,IDTIPOUSUARIO,ESTADO) VALUE(?,?,?,?,?)";
 	private static final String Update= "UPDATE SET ESTADO=0  FROM USUARIO WHERE IDUSUARIO = ?";
 	private static final String Update2	= "UPDATE SET NOMBRE=NOMBRE,APELLIDO=APELLIDO,CLAVE=CLAVE,IDTIPOUSUARIO=IDTIPOUSUARIO  FROM USUARIO WHERE IDUSUARIO = ?";
-	
+	private static final String LeerUsuario= "SELECT  *  FROM  USUARIO WHERE IDUSUARIO = ?";
 
 	
 	// insertar usuario
@@ -109,9 +115,41 @@ public  class UsuarioDaoImpl implements UsuarioDao {
 	}
 
 	@Override
-	public Usuario ObtenerUsuario(String cont, String nombre) {
-		// TODO Auto-generated method stub
-		return null;
+	public Usuario ObtenerUsuario(int id) {
+	    Usuario usuario = null;
+	    PreparedStatement statement;
+	    ResultSet resultSet;
+	    Conexion conexion = Conexion.getConexion();
+	    try {
+	        statement = conexion.getSQLConexion().prepareStatement(LeerUsuario); 
+	        statement.setInt(1, id);
+	        resultSet = statement.executeQuery();
+
+	        if (resultSet.next()) {
+	            usuario = GetUsuario(resultSet);
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return usuario;
+	}
+	
+	private Usuario GetUsuario(ResultSet resultSet) throws SQLException
+	{
+		int Id = resultSet.getInt("idusuario");
+		String Nombre = resultSet.getString("nombre");
+		String Apellido = resultSet.getString("apellido");
+		String Clave = resultSet.getString("clave");
+		int Tipo = resultSet.getInt("idtipousuario");
+		int Estado = resultSet.getInt("estado");
+	
+
+	   TipoUsuarioDaoImpl Dao = new TipoUsuarioDaoImpl();
+	   TipoUsuario tipo= Dao.ListarUno(Tipo);
+	        
+	        Usuario usuario = new Usuario (Id,Clave,Nombre, Apellido, tipo, Estado);
+	        
+	        return usuario;
 	}
 	
 	
