@@ -14,7 +14,7 @@ public  class UsuarioDaoImpl implements UsuarioDao {
 	private static final String insert= "INSERT INTO  USUARIO  (NOMBRE,APELLIDO,CLAVE,IDTIPOUSUARIO,ESTADO) VALUE(?,?,?,?,?)";
 	private static final String Update= "UPDATE SET ESTADO=0  FROM USUARIO WHERE IDUSUARIO = ?";
 	private static final String Update2	= "UPDATE SET NOMBRE=NOMBRE,APELLIDO=APELLIDO,CLAVE=CLAVE,IDTIPOUSUARIO=IDTIPOUSUARIO  FROM USUARIO WHERE IDUSUARIO = ?";
-	private static final String LeerUsuario= "SELECT  *  FROM  USUARIO  WHERE IDUSUARIO = ?";
+	private static final String LeerUsuario= "SELECT  *  FROM  USUARIO  WHERE apellido = ? And nombre = ? And  clave= ?";
 
 	
 	// insertar usuario
@@ -112,7 +112,7 @@ public  class UsuarioDaoImpl implements UsuarioDao {
 	
 	
 	@Override
-	public Usuario ObtenerUsuario(int id) {
+	public Usuario ObtenerUsuario(String Apellido,String Nombre, String Pass ) {
 		
 		  Usuario usuario = null;
 		    PreparedStatement statement;
@@ -120,7 +120,9 @@ public  class UsuarioDaoImpl implements UsuarioDao {
 		    Conexion conexion = Conexion.getConexion();
 		    try {
 		        statement = conexion.getSQLConexion().prepareStatement(LeerUsuario); 
-		        statement.setInt(1, id);
+		        statement.setString(1, Apellido);
+		        statement.setString(2, Nombre);
+		        statement.setString(3, Pass);
 		        resultSet = statement.executeQuery();
 
 		        if (resultSet.next()) {
@@ -146,7 +148,7 @@ public  class UsuarioDaoImpl implements UsuarioDao {
 	   TipoUsuarioDaoImpl Dao = new TipoUsuarioDaoImpl();
 	   TipoUsuario tipo= Dao.ListarUno(Tipo);
 	        
-	        Usuario usuario = new Usuario (Id,Clave,Nombre, Apellido, tipo, Estado);
+	    Usuario usuario = new Usuario (Id,Clave,Nombre, Apellido, tipo, Estado);
 	        
 	        return usuario;
 	}
