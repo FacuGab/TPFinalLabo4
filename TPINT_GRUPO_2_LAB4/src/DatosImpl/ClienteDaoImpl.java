@@ -9,7 +9,8 @@ import Datos.ClienteDao;
 import Entidad.Cliente;
 import Entidad.Localidad;
 public class ClienteDaoImpl implements ClienteDao {
-	private static final String leerUno = "Select * FROM cliente WHERE idCliente = ?";
+	private static final String leerUno = "Select * FROM clientes WHERE idCliente = ?";
+	private static final String contarCuentas = "Select count(*) as cantCuentas FROM cuentas as cu inner join clientes as cl on cu.idCliente = cl.idCliente WHERE cu.idCliente = ?";
 
 	@Override
 	public List<Cliente> ListarTodos() {
@@ -63,6 +64,26 @@ public class ClienteDaoImpl implements ClienteDao {
 	public boolean ValidarCliente(int dni) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+
+	@Override
+	public int ContarCuentasCliente(int idCliente) {
+	    int cantidadCuentas = 0;
+	    PreparedStatement statement;
+	    ResultSet resultSet;
+	    Conexion conexion = Conexion.getConexion();
+	    try {
+	        statement = conexion.getSQLConexion().prepareStatement(contarCuentas);
+	        statement.setInt(1, idCliente);
+	        resultSet = statement.executeQuery();
+
+	        if (resultSet.next()) {
+	            cantidadCuentas = resultSet.getInt("cantCuentas");
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return cantidadCuentas;
 	}
 
 	private Cliente getCliente(ResultSet resultSet) throws SQLException {

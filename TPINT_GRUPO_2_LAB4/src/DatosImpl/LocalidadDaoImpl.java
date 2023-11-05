@@ -9,8 +9,8 @@ import Entidad.Localidad;
 import Entidad.Provincia;
 
 public class LocalidadDaoImpl implements LocalidadDao{
-	private static final String leerUno = "Select * FROM localidad WHERE idLocalidad = ?";
-	private static final String leerTodas = "SELECT * FROM localidad";
+	private static final String leerUno = "Select * FROM localidades WHERE idLocalidad = ?";
+	private static final String leerTodas = "SELECT * FROM localidades";
 
 	@Override
     public ArrayList<Localidad> ListarTodas() {
