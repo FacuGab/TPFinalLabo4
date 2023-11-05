@@ -19,6 +19,7 @@ public class ClienteDaoImpl implements ClienteDao {
 			+ "SET dni = ?, nombre = ?, apellido = ?, idLocalidad = ?, direccion = ?, correo = ?, cuit = ?, genero = ?, telefonoCliente = ?, estadoCliente = ? WHERE idCliente = ?";
 	private static final String DeleteClientQuery = "DELETE FROM banco.cliente WHERE idCliente = ?";
 	private static final String ValidateClientQuery = "Select * FROM banco.cliente WHERE dni = ?";
+	private static final String contarCuentas = "Select count(*) as cantCuentas from clientes cl inner join cuentas cu on cl.idCliente = cu.idCliente where cl.idCliente = ?";
 
 	@Override
 	public List<Cliente> ListarTodos() {
@@ -174,6 +175,26 @@ public class ClienteDaoImpl implements ClienteDao {
 			return false;
 		}
 		return false;
+	}
+
+	@Override
+	public int ContarCuentasCliente(int idCliente) {
+	    int cantidadCuentas = 0;
+	    PreparedStatement statement;
+	    ResultSet resultSet;
+	    Conexion conexion = Conexion.getConexion();
+	    try {
+	        statement = conexion.getSQLConexion().prepareStatement(contarCuentas);
+	        statement.setInt(1, idCliente);
+	        resultSet = statement.executeQuery();
+
+	        if (resultSet.next()) {
+	            cantidadCuentas = resultSet.getInt("cantCuentas");
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return cantidadCuentas;
 	}
 
 	private Cliente getCliente(ResultSet resultSet) throws SQLException {
