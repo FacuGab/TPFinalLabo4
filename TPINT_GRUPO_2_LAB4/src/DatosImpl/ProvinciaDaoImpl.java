@@ -9,8 +9,8 @@ import Datos.ProvinciasDao;
 import Entidad.Provincia;
 
 public class ProvinciaDaoImpl implements ProvinciasDao{
-	private static final String leerProvincia = "Select * FROM provincia WHERE idProvincia = ?";
-	private static final String leerProvincias = "SELECT * FROM provincia";
+	private static final String leerProvincia = "Select * FROM provincias WHERE idProvincia = ?";
+	private static final String leerProvincias = "SELECT * FROM provincias";
 	@Override
 	public ArrayList<Provincia> ListarTodas() {
 		ArrayList<Provincia> provincias = new ArrayList<Provincia>();

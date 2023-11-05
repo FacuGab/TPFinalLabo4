@@ -7,7 +7,7 @@ import DatosImpl.*;
 public class hola {
 
 	public static void main(String[] args) {
-		ProvinciaDaoImpl a = new ProvinciaDaoImpl();
+		/*ProvinciaDaoImpl a = new ProvinciaDaoImpl();
 		Provincia prov = a.ListarUno(1);
 		System.out.println(prov);
 		LocalidadDaoImpl b = new LocalidadDaoImpl();
@@ -17,22 +17,11 @@ public class hola {
 		Cliente cli = c.ListarUno(1);
 		System.out.println(cli);
 		TipoCuentaDaoImpl d = new TipoCuentaDaoImpl();
-		TipoCuenta tc = d.ListarUno(1);
-		System.out.println(tc);
-		
-		CuentaDaoImpl cdao = new CuentaDaoImpl();
-		ArrayList<Cuenta> cuentas = cdao.ListarTodas();
-		
-		for (Cuenta cuenta : cuentas) {
-			System.out.println(cuenta);
-		}
-		
+		int a = d.numeroTipo("Cuenta corriente");
+		System.out.println(a);*/
+		CuentaDaoImpl c = new CuentaDaoImpl();
+		boolean a = c.ModificarCuenta(1, 1, 1, 1, "1", 1);
+		System.out.println(a);
 
-		Cuenta cuenta = cdao.ListarUno(1);
-		
-
-		System.out.println(cuenta);
-		
-	}
-
+}
 }

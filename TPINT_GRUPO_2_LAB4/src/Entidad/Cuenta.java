@@ -11,13 +11,14 @@ public class Cuenta {
 	private Date FechaAlta;
 	private String Cbu;
 	private double Saldo;
+	private boolean Estado;
 	
 	
 	//Constuctor
 	
 	public Cuenta() {}
 	
-	public Cuenta(int idCuenta, Cliente cliente, TipoCuenta tipoC, int numeroCuenta, Date fechaAlta,String cbu, double saldo) {
+	public Cuenta(int idCuenta, Cliente cliente, TipoCuenta tipoC, int numeroCuenta, Date fechaAlta,String cbu, double saldo, boolean estado) {
 		super();
 		IdCuenta = idCuenta;
 		Cliente = cliente;
@@ -26,9 +27,11 @@ public class Cuenta {
 		FechaAlta = fechaAlta;
 		Cbu = cbu;
 		Saldo = saldo;
+		Estado = estado;
 	}
 	
 	//Getters
+	
 	public int getIdCuenta() {
 		return IdCuenta;
 	}
@@ -74,15 +77,16 @@ public class Cuenta {
 	public void setSaldo(double saldo) {
 		Saldo = saldo;
 	}
+	public void setEstado(boolean estado) {
+		Estado = estado;
+	}
 
-	
-	//ToString
 	@Override
 	public String toString() {
 		return "Cuenta [IdCuenta=" + IdCuenta + ", Cliente=" + Cliente + ", TipoC=" + TipoC + ", NumeroCuenta="
-				+ NumeroCuenta + ", FechaAlta=" + FechaAlta + ", Cbu=" + Cbu + ", Saldo=" + Saldo + "]";
+				+ NumeroCuenta + ", FechaAlta=" + FechaAlta + ", Cbu=" + Cbu + ", Saldo=" + Saldo + ", Estado=" + Estado
+				+ "]";
 	}
-	
 	
 }
 
