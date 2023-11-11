@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Cliente;
+import java.entidad.Cliente;
 
 
 public interface ClienteDao {

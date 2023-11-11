@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import dao.TipoMovimientoDao;
-import entidad.TipoMovimiento;
+import java.dao.TipoMovimientoDao;
+import java.entidad.TipoMovimiento;
 
 public class TipoMovimientoDaoImpl implements TipoMovimientoDao {
 	private static final String insert = "INSERT INTO TiposMovimientos(tipoMovimiento) VALUES (?)";

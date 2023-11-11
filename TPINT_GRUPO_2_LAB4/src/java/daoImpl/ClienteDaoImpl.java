@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -8,14 +8,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import dao.ClienteDao;
-import dao.LocalidadDao;
-import dao.PaisDao;
-import dao.ProvinciaDao;
-import entidad.Cliente;
-import entidad.Localidad;
-import entidad.Pais;
-import entidad.Provincia;
+import java.dao.ClienteDao;
+import java.dao.LocalidadDao;
+import java.dao.PaisDao;
+import java.dao.ProvinciaDao;
+import java.entidad.Cliente;
+import java.entidad.Localidad;
+import java.entidad.Pais;
+import java.entidad.Provincia;
 
 public class ClienteDaoImpl implements ClienteDao {
 	private static final String insert = "INSERT INTO Clientes(dni,nombre,apellido,CUIL,sexo,nacionalidad,fecha_nac,direccion,codLocalidad, codProvincia, codPais, correo_electronico, telefonos) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";

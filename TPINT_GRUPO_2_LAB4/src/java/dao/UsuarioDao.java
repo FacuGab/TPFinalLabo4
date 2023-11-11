@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Usuario;
+import java.entidad.Usuario;
 
 public interface UsuarioDao {
 	public Boolean IniciarSesion(Usuario usuario);

@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Localidad;
+import java.entidad.Localidad;
 
 public interface LocalidadDao {
 	

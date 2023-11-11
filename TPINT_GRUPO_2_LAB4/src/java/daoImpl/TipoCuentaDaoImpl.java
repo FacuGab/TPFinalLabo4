@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import dao.TipoCuentaDao;
-import entidad.TipoCuenta;
+import java.dao.TipoCuentaDao;
+import java.entidad.TipoCuenta;
 
 public class TipoCuentaDaoImpl implements TipoCuentaDao {
 	private static final String insert = "INSERT INTO TiposCuentas(tipoCuenta) VALUES (?,?)";

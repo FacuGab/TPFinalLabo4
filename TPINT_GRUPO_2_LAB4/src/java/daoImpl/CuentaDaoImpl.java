@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 
 import java.math.BigDecimal;
@@ -13,12 +13,12 @@ import java.util.List;
 
 import com.mysql.cj.jdbc.CallableStatement;
 
-import dao.ClienteDao;
-import dao.CuentaDao;
-import dao.TipoCuentaDao;
-import entidad.Cuenta;
-import entidad.TipoCuenta;
-import entidad.Cliente;
+import java.dao.ClienteDao;
+import java.dao.CuentaDao;
+import java.dao.TipoCuentaDao;
+import java.entidad.Cuenta;
+import java.entidad.TipoCuenta;
+import java.entidad.Cliente;
 
 public class CuentaDaoImpl implements CuentaDao{
 	private static final String insert = "insert into cuentas(`CBU`,`dni`, `fecha_creacion`, `tipoCuenta`, `saldo`) values(?,?, current_date(),?,'10000')";

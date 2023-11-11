@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.TipoUsuario;
+import java.entidad.TipoUsuario;
 
 public interface TipoUsuarioDao {
 	

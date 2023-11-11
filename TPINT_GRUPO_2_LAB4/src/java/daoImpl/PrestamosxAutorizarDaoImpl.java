@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -11,9 +11,9 @@ import java.util.List;
 
 import com.mysql.cj.jdbc.CallableStatement;
 
-import dao.PrestamosxAutorizarDao;
-import entidad.Cuenta;
-import entidad.PrestamoxAutorizar;
+import java.dao.PrestamosxAutorizarDao;
+import java.entidad.Cuenta;
+import java.entidad.PrestamoxAutorizar;
 
 
 public class PrestamosxAutorizarDaoImpl implements PrestamosxAutorizarDao {

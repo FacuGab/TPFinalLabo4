@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import dao.PaisDao;
-import entidad.Pais;
+import java.dao.PaisDao;
+import java.entidad.Pais;
 
 public class PaisDaoImpl implements PaisDao {
 
