@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -10,18 +10,18 @@ import java.util.List;
 
 import com.mysql.cj.protocol.Resultset;
 
-import dao.ClienteDao;
-import dao.LocalidadDao;
-import dao.PaisDao;
-import dao.ProvinciaDao;
-import dao.TipoUsuarioDao;
-import dao.UsuarioDao;
-import entidad.Cliente;
-import entidad.Localidad;
-import entidad.Pais;
-import entidad.Provincia;
-import entidad.TipoUsuario;
-import entidad.Usuario;
+import java.dao.ClienteDao;
+import java.dao.LocalidadDao;
+import java.dao.PaisDao;
+import java.dao.ProvinciaDao;
+import java.dao.TipoUsuarioDao;
+import java.dao.UsuarioDao;
+import java.entidad.Cliente;
+import java.entidad.Localidad;
+import java.entidad.Pais;
+import java.entidad.Provincia;
+import java.entidad.TipoUsuario;
+import java.entidad.Usuario;
 
 public class UsuarioDaoImpl implements UsuarioDao {
 	

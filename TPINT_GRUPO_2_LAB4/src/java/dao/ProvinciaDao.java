@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Provincia;
+import java.entidad.Provincia;
 
 public interface ProvinciaDao {
 	

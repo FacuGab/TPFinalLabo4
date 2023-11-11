@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.math.BigDecimal;
 import java.sql.Date;
@@ -9,15 +9,15 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-import dao.ClienteDao;
-import dao.PrestamosDao;
-import dao.TipoCuentaDao;
-import entidad.Cliente;
-import entidad.Cuenta;
-import entidad.Cuota;
-import entidad.Prestamo;
-import entidad.TipoCuenta;
-
+import java.dao.ClienteDao;
+import java.dao.PrestamosDao;
+import java.dao.TipoCuentaDao;
+import java.entidad.Cliente;
+import java.entidad.Cuenta;
+import java.entidad.Cuota;
+import java.entidad.Prestamo;
+import java.entidad.TipoCuenta;
+       
 public class PrestamosDaoImpl implements PrestamosDao{
 	
 	private static final String readall = "SELECT * FROM prestamos where dni = ?";

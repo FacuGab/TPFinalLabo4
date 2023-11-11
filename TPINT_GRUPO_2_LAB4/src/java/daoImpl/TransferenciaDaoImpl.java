@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 import com.mysql.cj.jdbc.CallableStatement;
 
-import dao.TransferenciaDao;
-import entidad.Cuenta;
-import entidad.TipoMovimiento;
+import java.dao.TransferenciaDao;
+import java.entidad.Cuenta;
+import java.entidad.TipoMovimiento;
 
 public class TransferenciaDaoImpl implements TransferenciaDao{
 	private static final String transferir = "{CALL SP_TRANSFERENCIA(?,?,?,?,?,?,?)}";

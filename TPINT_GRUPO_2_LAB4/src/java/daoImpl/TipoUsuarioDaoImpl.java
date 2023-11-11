@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,8 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import dao.TipoUsuarioDao;
-import entidad.TipoUsuario;
+import java.dao.TipoUsuarioDao;
+import java.entidad.TipoUsuario;
 
 public class TipoUsuarioDaoImpl implements TipoUsuarioDao{
 

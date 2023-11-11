@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.PrestamoxAutorizar;
+import java.entidad.PrestamoxAutorizar;
 
 public interface PrestamosxAutorizarDao {
 	

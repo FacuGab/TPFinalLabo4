@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.TipoCuenta;
+import java.entidad.TipoCuenta;
 
 public interface TipoCuentaDao {
 	public boolean insert(TipoCuenta tipo_cuenta_a_agregar);

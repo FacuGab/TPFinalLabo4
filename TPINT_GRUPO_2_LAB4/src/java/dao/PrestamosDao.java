@@ -1,9 +1,9 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Cuota;
-import entidad.Prestamo;
+import java.entidad.Cuota;
+import java.entidad.Prestamo;
 
 
 public interface PrestamosDao {

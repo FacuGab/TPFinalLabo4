@@ -1,9 +1,9 @@
-package dao;
+package java.dao;
 
 import java.math.BigDecimal;
 
-import entidad.Cuenta;
-import entidad.TipoMovimiento;
+import java.entidad.Cuenta;
+import java.entidad.TipoMovimiento;
 
 public interface TransferenciaDao {
 	public Boolean DoTransfer(Cuenta CtaOrigen, Cuenta CtaDestino, BigDecimal importe, BigDecimal saldoOrigen, BigDecimal SaldoDestino, TipoMovimiento TMov, String detalle);

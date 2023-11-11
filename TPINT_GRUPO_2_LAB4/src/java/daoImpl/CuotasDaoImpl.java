@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import com.mysql.cj.jdbc.CallableStatement;
 
-import dao.CuotasDao;
+import java.dao.CuotasDao;
 
 public class CuotasDaoImpl implements CuotasDao{
 	private static final String pagarCuota = "{CALL SP_PAGO_CUOTA(?,?,?,?,?)}";
