@@ -1,7 +1,7 @@
 <%@page import="java.util.ArrayList"%>
-<%@page import="entidad.PrestamoxAutorizar" %>
+<%@page import="java.entidad.PrestamoxAutorizar" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"    pageEncoding="ISO-8859-1"%>
-<%@page import="entidad.Usuario" %>
+<%@page import="java.entidad.Usuario" %>
 <!DOCTYPE html>
 <html>
 <head>

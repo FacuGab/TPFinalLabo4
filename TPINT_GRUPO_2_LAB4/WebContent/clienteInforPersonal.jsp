@@ -1,7 +1,7 @@
-<%@page import="entidad.Pais" %>
-<%@page import="entidad.Localidad" %>
-<%@page import="entidad.Usuario" %>
-<%@page import="entidad.Cliente" %>
+<%@page import="java.entidad.Pais" %>
+<%@page import="java.entidad.Localidad" %>
+<%@page import="java.entidad.Usuario" %>
+<%@page import="java.entidad.Cliente" %>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
