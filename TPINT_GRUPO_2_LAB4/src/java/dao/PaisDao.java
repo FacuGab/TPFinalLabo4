@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Pais;
+import java.entidad.Pais;
 
 public interface PaisDao {
 	

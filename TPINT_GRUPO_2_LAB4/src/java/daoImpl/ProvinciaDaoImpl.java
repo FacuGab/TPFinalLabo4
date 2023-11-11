@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,10 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import dao.PaisDao;
-import dao.ProvinciaDao;
-import entidad.Pais;
-import entidad.Provincia;
+import java.dao.PaisDao;
+import java.dao.ProvinciaDao;
+import java.entidad.Pais;
+import java.entidad.Provincia;
 
 public class ProvinciaDaoImpl implements ProvinciaDao{
 

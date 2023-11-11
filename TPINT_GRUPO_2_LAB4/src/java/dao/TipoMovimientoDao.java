@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.TipoMovimiento;
+import java.entidad.TipoMovimiento;
 
 public interface TipoMovimientoDao {
 	public boolean insert(TipoMovimiento tipo_movimiento_a_agregar);

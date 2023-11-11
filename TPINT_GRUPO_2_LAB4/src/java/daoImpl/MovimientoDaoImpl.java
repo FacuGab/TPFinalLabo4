@@ -1,4 +1,4 @@
-package daoImpl;
+package java.daoImpl;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -10,12 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import entidad.Cuenta;
-import entidad.Movimiento;
-import entidad.TipoMovimiento;
-import dao.CuentaDao;
-import dao.MovimientoDao;
-import dao.TipoMovimientoDao;
+import java.entidad.Cuenta;
+import java.entidad.Movimiento;
+import java.entidad.TipoMovimiento;
+import java.dao.CuentaDao;
+import java.dao.MovimientoDao;
+import java.dao.TipoMovimientoDao;
 
 
 public class MovimientoDaoImpl implements MovimientoDao {

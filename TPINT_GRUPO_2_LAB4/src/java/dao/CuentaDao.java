@@ -1,8 +1,8 @@
-package dao;
+package java.dao;
 
 import java.util.List;
 
-import entidad.Cuenta;
+import java.entidad.Cuenta;
 
 public interface  CuentaDao {
 	
