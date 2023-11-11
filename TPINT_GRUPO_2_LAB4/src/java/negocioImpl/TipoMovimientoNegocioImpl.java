@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.TipoMovimientoDao;
-import daoImpl.TipoMovimientoDaoImpl;
-import entidad.TipoMovimiento;
-import negocio.TipoMovimientoNegocio;
+import java.dao.TipoMovimientoDao;
+import java.daoImpl.TipoMovimientoDaoImpl;
+import java.entidad.TipoMovimiento;
+import java.negocio.TipoMovimientoNegocio;
 
 public class TipoMovimientoNegocioImpl implements TipoMovimientoNegocio {
 	TipoMovimientoDao tipoMovimientoDao = new TipoMovimientoDaoImpl();

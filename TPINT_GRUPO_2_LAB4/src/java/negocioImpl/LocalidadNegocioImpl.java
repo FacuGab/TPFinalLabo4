@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.LocalidadDao;
-import daoImpl.LocalidadDaoImpl;
-import entidad.Localidad;
-import negocio.LocalidadNegocio;
+import java.dao.LocalidadDao;
+import java.daoImpl.LocalidadDaoImpl;
+import java.entidad.Localidad;
+import java.negocio.LocalidadNegocio;
 
 public class LocalidadNegocioImpl implements LocalidadNegocio {
 

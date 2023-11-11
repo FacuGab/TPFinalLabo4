@@ -3,10 +3,10 @@ package java.negocioImpl;
 import java.math.BigDecimal;
 import java.sql.Date;
 
-import daoImpl.TransferenciaDaoImpl;
-import entidad.Cuenta;
-import entidad.TipoMovimiento;
-import negocio.TransferenciaNegocio;
+import java.daoImpl.TransferenciaDaoImpl;
+import java.entidad.Cuenta;
+import java.entidad.TipoMovimiento;
+import java.negocio.TransferenciaNegocio;
 
 public class TransferenciaNegocioImpl implements TransferenciaNegocio{
 	

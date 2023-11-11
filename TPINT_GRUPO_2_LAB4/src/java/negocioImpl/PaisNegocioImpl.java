@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.PaisDao;
-import daoImpl.PaisDaoImpl;
-import entidad.Pais;
-import negocio.PaisNegocio;
+import java.dao.PaisDao;
+import java.daoImpl.PaisDaoImpl;
+import java.entidad.Pais;
+import java.negocio.PaisNegocio;
 
 public class PaisNegocioImpl implements PaisNegocio {
 

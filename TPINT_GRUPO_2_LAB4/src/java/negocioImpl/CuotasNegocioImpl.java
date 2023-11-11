@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.math.BigDecimal;
 
-import daoImpl.CuentaDaoImpl;
-import daoImpl.CuotasDaoImpl;
-import entidad.Cuenta;
-import negocio.CuotasNegocio;
+import java.daoImpl.CuentaDaoImpl;
+import java.daoImpl.CuotasDaoImpl;
+import java.entidad.Cuenta;
+import java.negocio.CuotasNegocio;
 
 public class CuotasNegocioImpl implements CuotasNegocio{
 	CuotasDaoImpl cuotasDao = new CuotasDaoImpl();

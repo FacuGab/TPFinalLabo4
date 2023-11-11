@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.TipoUsuarioDao;
-import daoImpl.TipoUsuarioDaoImpl;
-import entidad.TipoUsuario;
-import negocio.TipoUsuarioNegocio;
+import java.dao.TipoUsuarioDao;
+import java.daoImpl.TipoUsuarioDaoImpl;
+import java.entidad.TipoUsuario;
+import java.negocio.TipoUsuarioNegocio;
 
 
 public class TipoUsuarioNegocioImpl implements TipoUsuarioNegocio {

@@ -21,18 +21,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entidad.Cliente;
-import entidad.Cuenta;
-import entidad.Movimiento;
-import entidad.TipoMovimiento;
-import negocio.ClienteNegocio;
-import negocio.CuentaNegocio;
-import negocio.MovimientoNegocio;
-import negocio.TipoMovimientoNegocio;
-import negocioImpl.ClienteNegocioImpl;
-import negocioImpl.CuentaNegocioImpl;
-import negocioImpl.MovimientoNegocioImpl;
-import negocioImpl.TipoMovimientoNegocioImpl;
+import java.entidad.Cliente;
+import java.entidad.Cuenta;
+import java.entidad.Movimiento;
+import java.entidad.TipoMovimiento;
+import java.negocio.ClienteNegocio;
+import java.negocio.CuentaNegocio;
+import java.negocio.MovimientoNegocio;
+import java.negocio.TipoMovimientoNegocio;
+import java.negocioImpl.ClienteNegocioImpl;
+import java.negocioImpl.CuentaNegocioImpl;
+import java.negocioImpl.MovimientoNegocioImpl;
+import java.negocioImpl.TipoMovimientoNegocioImpl;
 
 
 /**

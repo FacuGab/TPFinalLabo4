@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import dao.MovimientoDao;
-import daoImpl.MovimientoDaoImpl;
-import entidad.Movimiento;
-import negocio.MovimientoNegocio;
+import java.dao.MovimientoDao;
+import java.daoImpl.MovimientoDaoImpl;
+import java.entidad.Movimiento;
+import java.negocio.MovimientoNegocio;
 
 
 public class MovimientoNegocioImpl implements MovimientoNegocio{

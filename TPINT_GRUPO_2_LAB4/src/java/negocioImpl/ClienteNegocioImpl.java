@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.ClienteDao;
-import daoImpl.ClienteDaoImpl;
-import entidad.Cliente;
-import negocio.ClienteNegocio;
+import java.dao.ClienteDao;
+import java.daoImpl.ClienteDaoImpl;
+import java.entidad.Cliente;
+import java.negocio.ClienteNegocio;
 
 public class ClienteNegocioImpl implements ClienteNegocio {
 

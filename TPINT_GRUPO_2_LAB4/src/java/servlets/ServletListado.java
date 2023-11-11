@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entidad.Cliente;
-import negocio.ClienteNegocio;
-import negocioImpl.ClienteNegocioImpl;
+import java.entidad.Cliente;
+import java.negocio.ClienteNegocio;
+import java.negocioImpl.ClienteNegocioImpl;
 
 
 /*

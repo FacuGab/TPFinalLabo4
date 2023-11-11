@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.PrestamosxAutorizarDao;
-import daoImpl.PrestamosxAutorizarDaoImpl;
-import entidad.PrestamoxAutorizar;
-import negocio.PrestamosxAutorizarNegocio;
+import java.dao.PrestamosxAutorizarDao;
+import java.daoImpl.PrestamosxAutorizarDaoImpl;
+import java.entidad.PrestamoxAutorizar;
+import java.negocio.PrestamosxAutorizarNegocio;
 
 public class PrestamosxAutorizarNegocioImpl implements PrestamosxAutorizarNegocio {
 	

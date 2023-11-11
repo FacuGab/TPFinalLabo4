@@ -6,14 +6,14 @@ import java.util.List;
 
 import org.eclipse.jdt.internal.compiler.env.ISourceMethod;
 
-import dao.ClienteDao;
-import dao.CuentaDao;
-import dao.TipoCuentaDao;
-import daoImpl.ClienteDaoImpl;
-import daoImpl.CuentaDaoImpl;
-import daoImpl.TipoCuentaDaoImpl;
-import entidad.Cuenta;
-import negocio.CuentaNegocio;
+import java.dao.ClienteDao;
+import java.dao.CuentaDao;
+import java.dao.TipoCuentaDao;
+import java.daoImpl.ClienteDaoImpl;
+import java.daoImpl.CuentaDaoImpl;
+import java.daoImpl.TipoCuentaDaoImpl;
+import java.entidad.Cuenta;
+import java.negocio.CuentaNegocio;
 
 public class CuentaNegocioImpl implements CuentaNegocio {
 

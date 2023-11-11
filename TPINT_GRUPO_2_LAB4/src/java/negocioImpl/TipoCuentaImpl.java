@@ -2,10 +2,10 @@ package java.negocioImpl;
 
 import java.util.List;
 
-import dao.TipoCuentaDao;
-import daoImpl.TipoCuentaDaoImpl;
-import entidad.TipoCuenta;
-import negocio.TipoCuentaNegocio;
+import java.dao.TipoCuentaDao;
+import java.daoImpl.TipoCuentaDaoImpl;
+import java.entidad.TipoCuenta;
+import java.negocio.TipoCuentaNegocio;
 
 public class TipoCuentaImpl implements TipoCuentaNegocio {
 	TipoCuentaDao TipoCuentaDao = new TipoCuentaDaoImpl();
