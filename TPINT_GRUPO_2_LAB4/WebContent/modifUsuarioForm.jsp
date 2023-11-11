@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@page import="entidad.Usuario" %>
-<%@page import="entidad.TipoUsuario" %>
+<%@page import="java.entidad.Usuario" %>
+<%@page import="java.entidad.TipoUsuario" %>
 <%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>

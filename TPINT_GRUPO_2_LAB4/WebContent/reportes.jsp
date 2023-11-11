@@ -1,8 +1,8 @@
-<%@page import="entidad.Usuario" %>
+<%@page import="java.entidad.Usuario" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@page import="entidad.Movimiento" %>
-<%@page import="entidad.TipoMovimiento" %>
+<%@page import="java.entidad.Movimiento" %>
+<%@page import="java.entidad.TipoMovimiento" %>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.math.BigDecimal"%>
 <!DOCTYPE html>
