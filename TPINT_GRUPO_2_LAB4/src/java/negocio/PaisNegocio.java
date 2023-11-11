@@ -2,7 +2,7 @@ package java.negocio;
 
 import java.util.List;
 
-import entidad.Pais;
+import java.entidad.Pais;
 
 public interface PaisNegocio {
 	public boolean insert(Pais pais_a_agregar);

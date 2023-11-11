@@ -3,8 +3,8 @@ package java.negocio;
 import java.math.BigDecimal;
 import java.util.List;
 
-import entidad.Cuenta;
-import entidad.TipoMovimiento;
+import java.entidad.Cuenta;
+import java.entidad.TipoMovimiento;
 
 public interface TransferenciaNegocio {
 	

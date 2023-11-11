@@ -2,7 +2,7 @@ package java.negocio;
 
 import java.util.List;
 
-import entidad.TipoCuenta;
+import java.entidad.TipoCuenta;
 
 public interface TipoCuentaNegocio {
 	public boolean insert(TipoCuenta tipo_movimiento_a_agregar);

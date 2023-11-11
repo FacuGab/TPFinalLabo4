@@ -2,7 +2,7 @@ package java.negocio;
 
 import java.util.List;
 
-import entidad.TipoUsuario;
+import java.entidad.TipoUsuario;
 
 public interface TipoUsuarioNegocio {
 	

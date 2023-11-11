@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import entidad.Movimiento;
+import java.entidad.Movimiento;
 
 public interface MovimientoNegocio {
 	

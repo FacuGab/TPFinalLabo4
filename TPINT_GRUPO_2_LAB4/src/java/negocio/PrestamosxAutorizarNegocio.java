@@ -2,7 +2,7 @@ package java.negocio;
 
 import java.util.List;
 
-import entidad.PrestamoxAutorizar;
+import java.entidad.PrestamoxAutorizar;
 
 public interface PrestamosxAutorizarNegocio {
 	
