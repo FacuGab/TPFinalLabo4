@@ -2,7 +2,7 @@ package java.negocio;
 
 import java.util.List;
 
-import entidad.Localidad;
+import java.entidad.Localidad;
 
 public interface LocalidadNegocio {
 	

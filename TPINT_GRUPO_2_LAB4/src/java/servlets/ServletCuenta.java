@@ -21,12 +21,12 @@ import jakarta.servlet.http.HttpServletResponse;
 */
 
 
-import entidad.Cuenta;
-import excepciones.SaldoCuenta;
-import negocio.CuentaNegocio;
-import negocio.TipoCuentaNegocio;
-import negocioImpl.CuentaNegocioImpl;
-import negocioImpl.TipoCuentaImpl;
+import java.entidad.Cuenta;
+import java.excepciones.SaldoCuenta;
+import java.negocio.CuentaNegocio;
+import java.negocio.TipoCuentaNegocio;
+import java.negocioImpl.CuentaNegocioImpl;
+import java.negocioImpl.TipoCuentaImpl;
 
 /**
  * Servlet implementation class ServletCliente

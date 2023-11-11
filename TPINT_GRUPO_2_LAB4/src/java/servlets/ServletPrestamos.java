@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entidad.Cuota;
-import entidad.Prestamo;
-import entidad.Usuario;
-import negocioImpl.PrestamosNegocioImpl;
+import java.entidad.Cuota;
+import java.entidad.Prestamo;
+import java.entidad.Usuario;
+import java.negocioImpl.PrestamosNegocioImpl;
 
 /*
 import jakarta.servlet.RequestDispatcher;

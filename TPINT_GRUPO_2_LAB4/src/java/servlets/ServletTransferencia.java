@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entidad.Cuenta;
-import entidad.TipoMovimiento;
+import java.entidad.Cuenta;
+import java.entidad.TipoMovimiento;
 
 
 
@@ -24,8 +24,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;*/
 
-import negocioImpl.CuentaNegocioImpl;
-import negocioImpl.TransferenciaNegocioImpl;
+import java.negocioImpl.CuentaNegocioImpl;
+import java.negocioImpl.TransferenciaNegocioImpl;
 
 
 /**

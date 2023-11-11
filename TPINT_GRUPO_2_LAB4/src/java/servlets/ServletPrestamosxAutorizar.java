@@ -4,12 +4,12 @@ import java.io.IOException;
 
 
 
-import entidad.Cliente;
-import entidad.Prestamo;
-import entidad.PrestamoxAutorizar;
-
-import negocio.PrestamosxAutorizarNegocio;
-import negocioImpl.PrestamosxAutorizarNegocioImpl;
+import java.entidad.Cliente;
+import java.entidad.Prestamo;
+import java.entidad.PrestamoxAutorizar;
+       
+import java.negocio.PrestamosxAutorizarNegocio;
+import java.negocioImpl.PrestamosxAutorizarNegocioImpl;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.ListIterator;

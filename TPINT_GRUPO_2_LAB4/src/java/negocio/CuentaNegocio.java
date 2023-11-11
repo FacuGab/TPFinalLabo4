@@ -2,7 +2,7 @@ package java.negocio;
 
 import java.util.List;
 
-import entidad.Cuenta;
+import java.entidad.Cuenta;
 
 public interface CuentaNegocio {
 

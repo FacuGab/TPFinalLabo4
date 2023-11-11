@@ -9,24 +9,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entidad.Cliente;
-import entidad.Usuario;
-import entidad.Cuenta;
-import entidad.Localidad;
-import entidad.Pais;
-import entidad.TipoUsuario;
-import negocio.ClienteNegocio;
-import negocioImpl.ClienteNegocioImpl;
-import negocioImpl.UsuarioNegocioImpl;
-import negocioImpl.CuentaNegocioImpl;
-import negocioImpl.LocalidadNegocioImpl;
-import negocioImpl.PaisNegocioImpl;
-import negocioImpl.TipoUsuarioNegocioImpl;
-import negocio.CuentaNegocio;
-import negocio.LocalidadNegocio;
-import negocio.PaisNegocio;
-import negocio.TipoUsuarioNegocio;
-import negocio.UsuarioNegocio;
+import java.entidad.Cliente;
+import java.entidad.Usuario;
+import java.entidad.Cuenta;
+import java.entidad.Localidad;
+import java.entidad.Pais;
+import java.entidad.TipoUsuario;
+import java.negocio.ClienteNegocio;
+import java.negocioImpl.ClienteNegocioImpl;
+import java.negocioImpl.UsuarioNegocioImpl;
+import java.negocioImpl.CuentaNegocioImpl;
+import java.negocioImpl.LocalidadNegocioImpl;
+import java.negocioImpl.PaisNegocioImpl;
+import java.negocioImpl.TipoUsuarioNegocioImpl;
+import java.negocio.CuentaNegocio;
+import java.negocio.LocalidadNegocio;
+import java.negocio.PaisNegocio;
+import java.negocio.TipoUsuarioNegocio;
+import java.negocio.UsuarioNegocio;
 
 
 
