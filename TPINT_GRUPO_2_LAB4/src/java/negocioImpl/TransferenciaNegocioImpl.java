@@ -1,4 +1,4 @@
-package negocioImpl;
+package java.negocioImpl;
 
 import java.math.BigDecimal;
 import java.sql.Date;

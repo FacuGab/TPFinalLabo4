@@ -1,9 +1,9 @@
-package negocioImpl;
+package java.negocioImpl;
 
-import entidad.Usuario;
-import negocio.UsuarioNegocio;
-import dao.UsuarioDao;
-import daoImpl.UsuarioDaoImpl;
+import java.entidad.Usuario;
+import java.negocio.UsuarioNegocio;
+import java.dao.UsuarioDao;
+import java.daoImpl.UsuarioDaoImpl;
 
 import java.util.List;
 

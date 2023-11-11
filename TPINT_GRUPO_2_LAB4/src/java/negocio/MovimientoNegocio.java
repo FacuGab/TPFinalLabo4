@@ -1,4 +1,4 @@
-package negocio;
+package java.negocio;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package entidad;
+package java.entidad;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

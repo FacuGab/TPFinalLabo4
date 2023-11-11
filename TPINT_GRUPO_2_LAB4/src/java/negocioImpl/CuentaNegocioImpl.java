@@ -1,4 +1,4 @@
-package negocioImpl;
+package java.negocioImpl;
 
 
 import java.util.ArrayList;

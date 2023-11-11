@@ -1,4 +1,4 @@
-package excepciones;
+package java.excepciones;
 
 import java.sql.SQLException;
 
