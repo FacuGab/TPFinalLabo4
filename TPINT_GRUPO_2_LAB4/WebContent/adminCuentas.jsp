@@ -8,7 +8,8 @@
 <style type="text/css">
 	<jsp:include page="css/style.css"></jsp:include>
 </style>
-<title>Administrar Préstamos - Admin</title>
+<title>Administrar Cuentas - Admin</title>
+
 </head>
 <body>
 <% 
@@ -30,13 +31,16 @@
 		<span>LOGGUEADO</span>
 	</div>
 </header>
+ 
 
 <div class="menu">
-<a class="volver" href="inicioAdmin.jsp"> <span class="volverIcon fa fa-home"></span> Volver</a>
-<h1>Administrar Prestamos</h1>
+<a href="inicioAdmin.jsp" class="volver"> <span class="volverIcon fa fa-home"></span> Volver</a>
+
+<h1>Administrar Cuentas</h1>
 <span>Seleccione la opción deseada: </span>
 		<div class="opcionesMenu">
-			<a href="/ServletPrestamosxAutorizar?getPrestamos"> Autorización de Préstamos </a>			
+			<a href="adminAltaCuenta.jsp"> Alta nuevo Cuentas </a>
+			<a href="adminBajaCuenta.jsp" > Dar de Baja Cuentas </a>
 		</div>
 </div>
 

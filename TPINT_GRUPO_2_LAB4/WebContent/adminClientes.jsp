@@ -8,9 +8,10 @@
 <style type="text/css">
 	<jsp:include page="css/style.css"></jsp:include>
 </style>
-<title>Administrar Préstamos - Admin</title>
+<title>Administrar Cuentas - Admin</title>
 </head>
 <body>
+
 <% 
 	Usuario usuario = new Usuario();
  	if(session.getAttribute("Usuario")!=null){	
@@ -18,7 +19,7 @@
  	}
 	
 	%>
-
+	
 <header class="header"> 
 	<div>
 		<a href="inicioAdmin.jsp">
@@ -30,13 +31,15 @@
 		<span>LOGGUEADO</span>
 	</div>
 </header>
-
+ 
+	
 <div class="menu">
 <a class="volver" href="inicioAdmin.jsp"> <span class="volverIcon fa fa-home"></span> Volver</a>
-<h1>Administrar Prestamos</h1>
+<h1>Administrar Cuentas</h1>
 <span>Seleccione la opción deseada: </span>
 		<div class="opcionesMenu">
-			<a href="/ServletPrestamosxAutorizar?getPrestamos"> Autorización de Préstamos </a>			
+			<a href="/TPINTEGRADOR_GRUPO1/ServletCliente?getTxtDni"> Alta nuevo Cliente </a> 
+			<a href="/TPINTEGRADOR_GRUPO1/ServletCliente?pag=1" > Modificar - Eliminar Cliente </a>
 		</div>
 </div>
 
